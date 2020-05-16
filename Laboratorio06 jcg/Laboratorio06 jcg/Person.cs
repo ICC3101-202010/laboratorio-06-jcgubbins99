@@ -5,7 +5,7 @@ using System.Text;
 namespace Laboratorio06_jcg
 {
     [Serializable]
-    class Person
+    public class Person
     {
         private string Nombreper;
         private string Apellido;
