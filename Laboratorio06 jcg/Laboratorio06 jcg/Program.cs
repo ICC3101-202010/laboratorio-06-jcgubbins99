@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.IO;
+
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading;
@@ -13,7 +13,7 @@ namespace Laboratorio06_jcg
 
         static void Main()
         {
-
+            
             List<Empresa> listaempresas = new List<Empresa>();
             string accion1 = "";
             while (accion1 != "3")
@@ -32,6 +32,8 @@ namespace Laboratorio06_jcg
                         try
                         {
                             Activarlistaempresa();
+                            verinforempresa(listaempresas);
+                            
 
                         }
                         catch (SerializationException error)
@@ -44,13 +46,6 @@ namespace Laboratorio06_jcg
                             Agregarempresa(listaempresas);
                         }
                         break;
-                                        
-                                
-
-                        
-                        
-                            
-
                     case "2":
                         Activarlistaempresa();
                         Agregarempresa(listaempresas);
@@ -99,7 +94,18 @@ namespace Laboratorio06_jcg
             {
                 listaempresas = CargarEmpresa();
             }
-            
+            string verinforempresa(List<Empresa> e)
+            {
+                string stringaux2 = "";
+                for (int i = 0; i < e.Count; i++)
+                {
+
+                    stringaux2 += e[i].Verinfodiv() + "\n";
+
+                    stringaux2 += " ";
+                }
+                return stringaux2;
+            }
         }
     }
 }
