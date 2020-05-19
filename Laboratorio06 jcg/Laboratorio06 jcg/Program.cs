@@ -28,7 +28,7 @@ namespace Laboratorio06_jcg
                 switch (accion1)
                 {
                     case "1":
-
+                        Console.Clear();
                         Activarlistaempresa();
                         
 
@@ -45,9 +45,9 @@ namespace Laboratorio06_jcg
                                 verinforempresa2(listaempresas);
                                 verinforempresa3(listaempresas);
                                 Console.WriteLine("=================================================");
+                                Console.WriteLine(" ");
                                 Console.WriteLine(" 2. PARA SALIR");
                                 accion20 = Console.ReadLine();
-                                Console.WriteLine(" ");
                                 
                                 switch (accion20)
                                 {
@@ -74,7 +74,7 @@ namespace Laboratorio06_jcg
                         break;
 
                     case "2":
-
+                        Console.Clear();
                         Agregarempresa();
                         break;
                     case "3":
