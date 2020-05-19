@@ -190,6 +190,7 @@ namespace Laboratorio06_jcg
                 Person p7 = new Person(nombrep1, apellidop1, rutp1);
                 e.Division[3].personasbloque2.Add(p7);
                 Thread.Sleep(1000);
+                Console.WriteLine(" ");
                 Console.WriteLine("Ingrese el nombre del trabajador 2 del Bloque 2 ");
                 nombrep1 = Console.ReadLine();
                 Console.WriteLine("Ingrese el apellido el nombre del trabajaor 2 del Bloque 2");
