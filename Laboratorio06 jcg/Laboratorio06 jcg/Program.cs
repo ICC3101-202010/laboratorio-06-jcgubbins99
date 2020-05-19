@@ -46,6 +46,7 @@ namespace Laboratorio06_jcg
                                 verinforempresa3(listaempresas);
                                 Console.WriteLine("=================================================");
                                 Console.WriteLine(" ");
+                                Console.WriteLine(" ");
                                 Console.WriteLine(" 2. PARA SALIR");
                                 accion20 = Console.ReadLine();
                                 
