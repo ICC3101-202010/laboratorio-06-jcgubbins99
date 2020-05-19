@@ -256,6 +256,7 @@ namespace Laboratorio06_jcg
                     Thread.Sleep(2000);
                     Agregarempresa();
                 }
+
             }
             void verinforempresa(List<Empresa> e)
             {
@@ -273,19 +274,16 @@ namespace Laboratorio06_jcg
             }
             void verinforempresa2(List<Empresa> e1)
             {
-                for (int j = 0; j < e1.Count; j++)
-                {
-                    Console.WriteLine(e1[j].Division[3].Verinfobloque1());
-                }
+                Console.WriteLine(e1[0].Division[3].Verinfobloque1());
+                
 
 
             }
             void verinforempresa3(List<Empresa> e1)
             {
-                for (int j = 0; j < e1.Count; j++)
-                {
-                    Console.WriteLine(e1[j].Division[3].Verinfobloque2());
-                }
+                
+                Console.WriteLine(e1[0].Division[3].Verinfobloque2());
+                
 
 
             }

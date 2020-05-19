@@ -37,14 +37,14 @@ namespace Laboratorio06_jcg
         {
 
             string stringaux1 = "";
-            for (int i = 0; i < personasbloque1.Count; i++)
-            {
-                stringaux1 += "Bloque 1" + " :" + "\n";
-                stringaux1 += "Trabajador " + (i + 1) + " :" + personasbloque1[i].nombreper + " " + personasbloque1[i].apellido + "De rut: " + personasbloque1[i].rut + "\n";
+            stringaux1 += "Bloque 1" + " :" + "\n";
+            stringaux1 += "Trabajador " + 1 + " :" + personasbloque1[0].nombreper + " " + personasbloque1[0].apellido + " De rut: " + personasbloque1[0].rut + "\n";
+            stringaux1 += "Trabajador " + 2 + " :" + personasbloque1[1].nombreper + " " + personasbloque1[1].apellido + " De rut: " + personasbloque1[1].rut + "\n";
 
 
-            }
-            Console.WriteLine(stringaux1);
+
+
+            
 
             return stringaux1;
         }
@@ -52,14 +52,16 @@ namespace Laboratorio06_jcg
         {
 
             string stringaux2 = "";
-            for (int i = 0; i < personasbloque2.Count; i++)
-            {
-                stringaux2 += "Bloque 2" + " :" + "\n";
-                stringaux2 += "Trabajador " + (i + 1) + " :" + personasbloque2[i].nombreper + " " + personasbloque2[i].apellido + "De rut: " + personasbloque2[i].rut + "\n";
+            stringaux2 += "Bloque 2" + " :" + "\n";
+            stringaux2 += "Trabajador " + 1 + " :" + personasbloque2[0].nombreper + " " + personasbloque2[0].apellido + " De rut: " + personasbloque2[0].rut + "\n";
+            
+            stringaux2 += "Trabajador " + 2 + " :" + personasbloque2[1].nombreper + " " + personasbloque2[1].apellido + " De rut: " + personasbloque2[1].rut + "\n";
 
 
-            }
-            Console.WriteLine(stringaux2);
+
+
+
+            
 
             return stringaux2;
 
