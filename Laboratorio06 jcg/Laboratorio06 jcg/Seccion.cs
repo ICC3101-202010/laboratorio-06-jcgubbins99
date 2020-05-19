@@ -7,10 +7,10 @@ namespace Laboratorio06_jcg
     [Serializable]
     class Seccion: Division
     {
-        public Seccion(string nombre)
+        public Seccion(string nombre, Person p1)
         {
             this.nombre = nombre;
-            this.p1 = Empresa.Personarandom();
+            this.p1 = p1;
         }
     }
 }

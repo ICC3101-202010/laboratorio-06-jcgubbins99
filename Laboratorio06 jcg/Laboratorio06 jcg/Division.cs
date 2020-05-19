@@ -9,10 +9,9 @@ namespace Laboratorio06_jcg
     {
         private string Nombre;
         public Person p1;
-        public static Person p2 = Empresa.Personarandom();
-        public static Person p3 = Empresa.Personarandom();
-        public static Person p4 = Empresa.Personarandom();
-        public static Person p5 = Empresa.Personarandom();
+        public List<Person> personasbloque1 = new List<Person>();
+        public List<Person> personasbloque2 = new List<Person>();
+
         public string nombre
         {
             get
@@ -25,27 +24,45 @@ namespace Laboratorio06_jcg
                 Nombre = value;
             }
         }
+        public List<Person> Personasbloque1 { get => personasbloque1; set => personasbloque1 = value; }
+        public List<Person> Personasbloque2 { get => personasbloque2; set => personasbloque2 = value; }
         public string information()
         {
             string stringaux = "";
-            stringaux=("Encargado de "+nombre+" : "+p1.nombreper +" "+p1.apellido+" de rut : "+p1.rut);
+            stringaux = ("Encargado de " + nombre + " : " + p1.nombreper + " " + p1.apellido + " de rut : " + p1.rut);
             return stringaux;
         }
-        public static void informationbloque1()
-        {
-            
-            Console.WriteLine("Personal bloque 1"+"\n");
-            Console.WriteLine("Empleado 1: "+ p2.nombreper+" "+p2.apellido+" de rut: "+ p2.rut);
-            Console.WriteLine("Empleado 2: " + p3.nombreper + " " + p3.apellido + " de rut: " + p3.rut);
-        }
-        public static void informationbloque2()
-        {
-            Console.WriteLine("");
-            Console.WriteLine("=================================================");
-            Console.WriteLine("Personal bloque 2" + "\n");
-            Console.WriteLine("Empleado 1: " + p4.nombreper + " " + p4.apellido + " de rut: " + p4.rut);
-            Console.WriteLine("Empleado 2: " + p5.nombreper + " " + p5.apellido + " de rut: " + p5.rut);
-        }
 
+        public string Verinfobloque1()
+        {
+
+            string stringaux1 = "";
+            for (int i = 0; i < personasbloque1.Count; i++)
+            {
+                stringaux1 += "Bloque 1" + " :" + "\n";
+                stringaux1 += "Trabajador " + (i + 1) + " :" + personasbloque1[i].nombreper + " " + personasbloque1[i].apellido + "De rut: " + personasbloque1[i].rut + "\n";
+
+
+            }
+            Console.WriteLine(stringaux1);
+
+            return stringaux1;
+        }
+        public string Verinfobloque2()
+        {
+
+            string stringaux2 = "";
+            for (int i = 0; i < personasbloque2.Count; i++)
+            {
+                stringaux2 += "Bloque 2" + " :" + "\n";
+                stringaux2 += "Trabajador " + (i + 1) + " :" + personasbloque2[i].nombreper + " " + personasbloque2[i].apellido + "De rut: " + personasbloque2[i].rut + "\n";
+
+
+            }
+            Console.WriteLine(stringaux2);
+
+            return stringaux2;
+
+        }
     }
 }

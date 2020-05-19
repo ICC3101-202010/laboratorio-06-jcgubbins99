@@ -8,10 +8,11 @@ namespace Laboratorio06_jcg
     class Area:Division
     {
         
-        public Area(string nombre)
+        public Area(string nombre, Person p1)
         {
             this.nombre = nombre;
-            this.p1 = Empresa.Personarandom();
+            this.p1 = p1;
+            
         }
     }
 
