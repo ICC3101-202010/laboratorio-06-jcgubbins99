@@ -37,17 +37,18 @@ namespace Laboratorio06_jcg
 
 
 
-                            Console.WriteLine(" 2. PARA SALIR");
+                            
                             string accion20 = "";
                             while (accion20 != "2")
                             {
                                 verinforempresa(listaempresas);
                                 verinforempresa2(listaempresas);
                                 verinforempresa3(listaempresas);
-
+                                Console.WriteLine("=================================================");
+                                Console.WriteLine(" 2. PARA SALIR");
                                 accion20 = Console.ReadLine();
                                 Console.WriteLine(" ");
-                                Console.WriteLine(" 2. PARA SALIR");
+                                
                                 switch (accion20)
                                 {
                                     case "2":
